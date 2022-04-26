@@ -101,7 +101,7 @@ int main()
 					} 
 			*/
 
-		const int NUM_FISH = 20;
+	/*	const int NUM_FISH = 20;
 		int fish[NUM_FISH];
 		int userInput; 
 
@@ -120,8 +120,151 @@ int main()
 
 		return 0;
 
-	
+	*/
 
+
+
+		// 7.8 Define the following arrays:
+		/*
+	A) ages, a 10-element array of ints initialized with the values 5, 7, 9, 14, 15, 
+		17, 18, 19, 21, and 23. 
+	B) temps, a 7-element array of floats initialized with the values 14.7, 16.3, 
+		18.43, 21.09, 17.9, 18.76, and 26.7. 
+	C) alpha, an 8-element array of chars initialized with the values ‘J’, ‘B’, ‘L’, 
+		‘A’, ‘*’, ‘$’, ‘H’, and ‘M’. 
+		*/
+
+		int ages[10] = { 5,7,8,14,15,17,18,19,21,23 };
+
+		float temps[7] = { 14.7, 16.3, 18.43, 21.09, 17.9, 18.76, 26.7 };
+
+		char alpha[8] = { 'J','B','L', 'A', '*', '$', 'H', 'M'};
+
+
+
+
+		/*	7.9 Is each of the following a valid or invalid array definition? (If a definition is 
+	invalid, explain why.) 
+	
+	1 int numbers[10] = {0, 0, 1, 0, 0, 1, 0, 0, 1, 1}; 
+	2 int matrix[5] = {1, 2, 3, 4, 5, 6, 7}; 
+	3 double radii[10] = {3.2, 4.7}; 
+	4 int table[7] = {2, , , 27, , 45, 39}; 
+	5 char codes[] = {'A', 'X', '1', '2', 's'}; 
+	6 int blanks[]; 
+		
+		
+
+		1 int numbers is a valid array definition
+
+		2 int matrix[5] is not a valid array definition because it has more elements than listed in the size declaration.
+
+		3 double radii is valid
+
+		4 int table[7] is not a valid array definition because any empty elements should be initialized to 0, not left blank.
+
+		5 Valid due to implicit array sizing.
+
+		6 not valid, must be initialized to a value or have a size declarator. 
+
+		*/
+
+
+
+
+		/*		7.10 Given the following array definition: 
+int values[] = {2, 6, 10, 14}; 
+ What does each of the following display? 
+A) cout << values[2];
+B) cout << ++values[0];
+C) cout << values[1]++;
+D) x = 2;
+cout << values[++x];
+		
+
+
+		A will display 10
+		B will display 3 
+		C will display
+		D will display 14
+		
+		*/
+
+
+
+		/*
+`		7.11		Given the following array definition: 
+int nums[5] = {1, 2, 3}; 
+ What will the following statement display? 
+cout << nums[3];
+
+
+
+
+		it will display 0, as 3 is not an initialized element of the array. Default is 0
+
+
+
+
+
+
+
+
+
+
+
+
+	7.12		What is the output of the following code? (You may need to use a calculator.)
+double balance[5] = {100.0, 250.0, 325.0, 500.0, 1100.0};
+const double INTRATE = 0.1;
+cout << fixed << showpoint << setprecision(2);
+for (int count = 0; count < 5; count++)
+ cout << (balance[count] * INTRATE) << endl;
+
+
+			it will output:
+			10
+			25
+			32.5
+			50
+			110
+
+
+
+
+
+
+
+
+
+
+
+
+			7.13 What is the output of the following code? (You may need to use a calculator.)
+const int SIZE = 5;
+int time[SIZE] = {1, 2, 3, 4, 5},
+ speed[SIZE] = {18, 4, 27, 52, 100},
+ dist[SIZE];
+for (int count = 0; count < SIZE; count++)
+ dist[count] = time[count] * speed[count];
+for (int count = 0; count < SIZE; count++)
+ {
+ cout << time[count] << " ";
+ cout << speed[count] << " ";
+ cout << dist[count] << endl;
+ }
+
+
+			the output is 
+			1 18 18
+			2 4  8
+			3 27 81
+			4 52 208
+			5 100 500
+
+
+
+		*/
 
 }
 		
